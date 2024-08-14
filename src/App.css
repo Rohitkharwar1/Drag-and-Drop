@@ -1,0 +1,72 @@
+.canvas-container {
+  padding-top: 60px;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.canvas-area {
+  position: relative;
+  width: 2000px;
+  height: 2000px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #0c0c0c;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup-content {
+  max-width: 400px;
+}
+
+.popup button {
+  margin-top: 10px;
+  background-color: aquamarine;
+}
+
+.add-card-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  margin: 20px 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-card-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.add-card-btn:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
